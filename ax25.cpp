@@ -1,3 +1,6 @@
+#ifndef __AX25_CPP__
+#define __AX25_CPP__
+
 /*
  * Copyright (C) 2014 by KC3ARY Rich Nash
  * 
@@ -19,8 +22,8 @@
  */
 
 #include <WProgram.h>
-#include "ax25.h"
-#include "aprs.h"
+#include <ax25.h>
+#include <aprs.h>
 
 // Module constants
 
@@ -146,3 +149,5 @@ void ax25_send_footer()
   // Signal the end of frame
   ax25_send_flag();
 }
+
+#endif

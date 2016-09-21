@@ -1,3 +1,5 @@
+#ifndef __APRS_CPP__
+#define __APRS_CPP__
 /*
  * Copyright (C) 2013 by KC3ARY Rich Nash
  * 
@@ -26,9 +28,9 @@
  */
 
 #include <WProgram.h>
-#include "afsk.h"
-#include "ax25.h"
-#include "aprs.h"
+#include <afsk.h>
+#include <ax25.h>
+#include <aprs.h>
 
 #define MAXSENDBUFFER 500 // Used to allocate a static buffer on the stack to build the AX25 buffer
 
@@ -215,3 +217,5 @@ void aprs_send(const PathAddress * const paths, const int nPaths,
 
   logBuffer(buf, ax25_getPacketSize(), dayOfMonth, hour, min);
 }
+
+#endif

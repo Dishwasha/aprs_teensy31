@@ -1,3 +1,6 @@
+#ifndef __AFSK_CPP__
+#define __AFSK_CPP_
+
 /*
  * Copyright (C) 2014 by KC3ARY Rich Nash
  * 
@@ -20,7 +23,7 @@
  */
 
 #include <WProgram.h>
-#include "afsk.h"
+#include <afsk.h>
 
 // Timing constants
 // All of the calculations are done in the precompiler in float point, and then
@@ -313,3 +316,4 @@ void afsk_start()
   afsk_timer_start();
 }
 
+#endif
